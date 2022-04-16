@@ -1,0 +1,11 @@
+[{
+        "image": "images/social/github.svg",
+        "link": "https://github.com/avelino/moclojer",
+        "name": "Github"
+    },
+    {
+        "image": "images/social/twitter.svg",
+        "link": "https://twitter.com/moclojer",
+        "name": "Twitter"
+    }
+]
