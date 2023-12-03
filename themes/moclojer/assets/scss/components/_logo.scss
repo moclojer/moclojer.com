@@ -5,6 +5,8 @@
   }
   a {
     display: block;
+    font-weight: bold;
+    text-decoration: none;
   }
   img {
     width: auto;
@@ -12,11 +14,14 @@
 }
 .logo-mobile {
   display: block;
+  color: $black !important;
   @include media-breakpoint-up(sm) {
     display: none;
   }
   a {
     display: block;
+    font-weight: bold;
+    text-decoration: none;
   }
   img {
     width: auto;

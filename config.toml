@@ -1,12 +1,12 @@
 baseURL = "https://moclojer.com"
 languageCode = "en-us"
-title = "moclojer - api server mock"
+title = "api server mock - moclojer"
 theme = "moclojer"
 
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.55.0"
+    min = "0.114.0"
 
 [params]
   # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
@@ -18,11 +18,11 @@ theme = "moclojer"
     show_services_button = true  # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/logo-moclojer-name.png"
+    mobile = "images/logo/logo-moclojer-icon.png"
     mobile_height = "36px"
-    desktop = "images/logo/logo-moclojer-name.png"
+    desktop = "images/logo/logo-moclojer-icon.png"
     desktop_height = "36px"
-    alt = "moclojer - api server mock"
+    alt = "api server mock - moclojer"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
