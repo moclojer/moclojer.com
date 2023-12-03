@@ -8,7 +8,7 @@ weight: 6
 
 The endpoint return does not have to be static, it can use dynamic data passed by **query string**, **URI** and _other parameters_.
 
-Variables:
+**Variables:**
 
 - `path-params`: the parameters passed to the endpoint `/hello/:username`
 - `query-params`: the parameters passed in query string to the endpoint `?param1=value1¶m2=value2`
