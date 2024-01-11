@@ -1,4 +1,4 @@
-baseURL = "https://about.moclojer.com"
+baseURL = "https://www.moclojer.com"
 languageCode = "en-us"
 title = "api server mock - moclojer"
 theme = "moclojer"
