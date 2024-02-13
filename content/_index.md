@@ -2,8 +2,8 @@
 title: 'Homepage'
 meta_title: 'no-code api server mock - moclojer'
 description: "Simple and efficient HTTP mock server with specification in yaml, edn or OpenAPI 3"
-intro_image: "images/illustrations/pointing.svg"
-intro_image_absolute: true
+intro_image: "images/illustrations/home.png"
+intro_image_absolute: false
 intro_image_hide_on_mobile: true
 ---
 
