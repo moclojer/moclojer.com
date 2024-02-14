@@ -3,10 +3,20 @@
 {{ define "main" }}
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
+    <div style= "display: block;">
       <h1 class="title">{{.Title}}</h1>
-      <div class="content">{{.Content}}</div>
+
+      {{ if .Params.intro_image }}
+      <div class="col-12 col-md-5 col-lg-6" style="float: right;">
+        <img
+          class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}"
+          src="{{ .Params.intro_image | relURL }}" />
+      </div>
+      {{ end }}
+
+      {{ .Content }}
     </div>
+
   </div>
 </div>
 {{ end }}

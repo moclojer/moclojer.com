@@ -1,4 +1,10 @@
-# TERMS OF USE - moclojer cloud
+---
+title: 'Terms of use'
+date: 2024-02-01T17:01:34+07:00
+intro_image: "images/illustrations/terms-of-use.png"
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
+---
 
 **Last updated:** _2024-02-05_
 

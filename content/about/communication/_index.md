@@ -3,8 +3,6 @@ title: 'Communication'
 date: 2018-02-22T17:01:34+07:00
 ---
 
-# Communication
-
 > this page could be called "how we communicate", but it sounded too much like the Globo Reporte program with "where they live, what they eat, ..." KKKKKKJKKK
 
 We are a **distributed** company ~~(we don't work from home)~~, we work with **responsible adults** who are committed to what we do and who all see the impact that the products we develop have.
