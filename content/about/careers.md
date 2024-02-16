@@ -16,12 +16,11 @@ We're very happy 😁 that you've come this far, we understand that in some way 
 - Redis
 - RabbitMQ
 - Cloud: DigitalOcean and/or GCP
-    - Object Store for media files
+  - Object Store for media files
 - Supabase auth
 - Resend
 
-
-## Don't wait for the chance!
+## Don't wait for the chance
 
 We like to work with people with professional ambitions. If you believe that moclojer is a company that will help you grow professionally, let's go together.
 
@@ -30,7 +29,6 @@ We like to work with people with professional ambitions. If you believe that moc
 - technical test
 - review of the technical test
 - discussion with the team 🎉
-
 
 ## Product engineering
 
@@ -43,16 +41,15 @@ We like to work with people with professional ambitions. If you believe that moc
 1. create a `git` repository with the test implementation - *we encourage you to make it public*
 2. after implementation, send an e-mail with the subject "**product engineering at moclojer"** to `hey AT moclojer DOT com`
 
-
 ### Engineering test
 
 - develop a product using Clojure and ClojureScript *(you choose whether it should be monolithic or separate front and back)*;
 
     **I don't know Clojure/Script, now what?
 
-    - *try* frontend or backend
-    - **if** you really can't do it, do it using the technology you've mastered
-    - **obs:** in the code review, we'll ask you how you studied Clojure - we encourage our team to be curious and study new technologies
+  - *try* frontend or backend
+  - **if** you really can't do it, do it using the technology you've mastered
+  - **obs:** in the code review, we'll ask you how you studied Clojure - we encourage our team to be curious and study new technologies
 
 - Develop a product using the public API [pokeapi.co](https://pokeapi.co), this is the time for you to be creative (we're leaving the scope of the product that will be developed open on purpose)
 - We use Docker *(compose)* to use the environment: `docker compose up`
