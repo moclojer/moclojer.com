@@ -23,7 +23,7 @@ We're very happy 😁 that you've come this far, we understand that in some way 
 
 ## Don't wait for the chance!
 
-We like to work with people with professional ambitions. If you believe that cljazz is a company that will help you grow professionally, let's go together.
+We like to work with people with professional ambitions. If you believe that moclojer is a company that will help you grow professionally, let's go together.
 
 **Steps regardless of your area of expertise:**
 
