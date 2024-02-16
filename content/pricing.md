@@ -1,6 +1,9 @@
 ---
 title: 'Pricing'
 date: 2018-02-22T17:01:34+07:00
+intro_image: "images/illustrations/pricing.png"
+intro_image_absolute: false
+intro_image_hide_on_mobile: false
 ---
 
 ## moclojer cloud is the upgrade you're looking for

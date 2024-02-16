@@ -1,6 +1,7 @@
 ---
 title: 'Careers'
 date: 2024-02-01T17:01:34+07:00
+intro_image: "images/illustrations/careers.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
@@ -46,16 +47,16 @@ We like to work with people with professional ambitions. If you believe that clj
 ### Engineering test
 
 - develop a product using Clojure and ClojureScript *(you choose whether it should be monolithic or separate front and back)*;
-    
+
     **I don't know Clojure/Script, now what?
-    
+
     - *try* frontend or backend
     - **if** you really can't do it, do it using the technology you've mastered
     - **obs:** in the code review, we'll ask you how you studied Clojure - we encourage our team to be curious and study new technologies
 
 - Develop a product using the public API [pokeapi.co](https://pokeapi.co), this is the time for you to be creative (we're leaving the scope of the product that will be developed open on purpose)
 - We use Docker *(compose)* to use the environment: `docker compose up`
-    
+
     > all external service dependencies should work (go up), using `compose`
 
 - Use [TailwindUI](https://tailwindui.com/) on the frontend
