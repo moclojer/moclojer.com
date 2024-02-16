@@ -54,22 +54,18 @@ theme = "moclojer"
     name = "Documentation"
     url = "https://docs.moclojer.com/"
     weight = 1
-
   [[menu.main]]
     name = "Features"
     url = "/features/"
     weight = 2
-
   [[menu.main]]
       name = "Team"
       url = "/team/"
       weight = 3
-
   [[menu.main]]
       name = "About"
       url = "/about/"
       weight = 4
-
   [[menu.main]]
     name = "Login"
     url = "https://app.moclojer.com/"
@@ -81,10 +77,14 @@ theme = "moclojer"
     url = "/"
     weight = 1
   [[menu.footer]]
+    name = "Careers"
+    url = "/about/careers/"
+    weight = 2
+  [[menu.footer]]
     name = "About"
     url = "/about/"
-    weight = 2
+    weight = 3
   [[menu.footer]]
     name = "Terms of Use"
     url = "/about/term-of-use/"
-    weight = 3
+    weight = 4
