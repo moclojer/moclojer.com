@@ -15,6 +15,7 @@ Comparison of what you can expect when you upgrade to implement your mock with m
 | mocks | 2 | 10 | 30 |
 | moclojer domain | true | true | true |
 | free SSL | true | true | true |
-| endpoint quantity | 5 | unlimited | unlimited
+| endpoint quantity | 5 | unlimited | unlimited |
 | custom domain | false | true | true |
 | multi user manage | false | false | true |
+| sleeping | *after 30 minutes of inactivity* | false | false |
