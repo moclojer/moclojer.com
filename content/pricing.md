@@ -18,4 +18,5 @@ Comparison of what you can expect when you upgrade to implement your mock with m
 | endpoint quantity | 5 | unlimited | unlimited |
 | custom domain | false | true | true |
 | multi user manage | false | false | true |
-| sleeping | *after 30 minutes of inactivity* | false | false |
+| git sync | false | true | true |
+| sleeping | *after `30min` of inactivity* | false | false |
