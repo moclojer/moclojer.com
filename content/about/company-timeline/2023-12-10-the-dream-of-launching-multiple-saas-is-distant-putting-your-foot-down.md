@@ -1,6 +1,6 @@
 ---
 title: 'The dream of launching multiple SaaS is distant, putting your foot down - 2023-12-10'
-date: 2024-12-10T17:01:34+07:00
+date: 2023-12-10T17:01:34+07:00
 ---
 
 Our purpose with cljam was to be a MicroSaaS launch company, starting with the launch of moclojer, but we were being extremely optimistic that launching SaaS of Open Source software that we maintain would be "simple", we made a mistake and decided to put our efforts into moclojer as the main product.
