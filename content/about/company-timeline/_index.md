@@ -38,4 +38,4 @@ I won't say no, but today our main objective is the **moclojer**, to do a good j
 
 ## 2023-07-20 - rebranding: changing the name cljazz to cljam
 
-{{% include "content/about/company-timeline/2023-07-20-rebranding-changing-the-name-cljazz-to-cljam.md" %}}
+{{% include "2023-07-20-rebranding-changing-the-name-cljazz-to-cljam.md" %}}
