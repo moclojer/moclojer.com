@@ -4,18 +4,17 @@
 <div class="intro">
   <div class="container">
     <div class="row justify-content-start">
-      <div>
-        <div style= "display: block;">
-          {{ if .Params.intro_image }}
-          <div class="col-12 col-md-5 col-lg-6" style="float: right;">
-            <img
-              class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}"
-              src="{{ .Params.intro_image | relURL }}" />
-          </div>
-          {{ end }}
-
-          {{ .Content }}
+      <div style= "display: block;">
+        <h1 class="title">{{.Title}}</h1>
+        {{ if .Params.intro_image }}
+        <div class="col-12 col-md-5 col-lg-6" style="float: right;">
+          <img
+            class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}"
+            src="{{ .Params.intro_image | relURL }}" />
         </div>
+        {{ end }}
+
+        {{ .Content }}
       </div>
     </div>
   </div>
