@@ -6,8 +6,6 @@ intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
 
-# About
-
 We are a customer-focused company using open source and we use clojure by design to develop our solutions. Our business model is SaaS, providing a version of the Open Source moclojer hosted on our infrastructure.
 
 The moclojer supports API-first development with the API Builder. You can design your API directly with moclojer using the `yaml`, `edn`, and `OpenAPI 3` specification. Your specification can then act as the only source of truth for your API design, and you can use it to generate documentation, mock servers, and client SDKs.
