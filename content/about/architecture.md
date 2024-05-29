@@ -23,6 +23,23 @@ We use [DigitalOcean](https://m.do.co/c/70c384d0d807) as our infrastructure prov
 
 Application logs are sent to [Logtail](https://marketplace.digitalocean.com/add-ons/logtail), installed via [DigitalOcean](https://m.do.co/c/70c384d0d807) add-ons.
 
+### App Platform
+
+The [App Platform](https://www.digitalocean.com/products/app-platform/) is a platform as a service (PaaS) that enables developers to build, deploy, and scale applications quickly and easily. It supports several programming languages, including Clojure 💜, and provides a range of features to help developers build and deploy applications more efficiently.
+
+We have two applications on the App Platform:
+
+**moclojer-app**
+
+* `static_sites` serving the **frontend**, with `ingress` *(public access)*
+* `services` serving the **back/api**, with `ingress` *(public access)*
+* `workers` running the **yaml/generator** and **cloud/ops**
+* `databases` running the **postgres** and **redis/mq** managed
+
+**moclojer/foss**
+
+* `services` serving the **moclojer/foss**, with `ingress` *(public access)* - with support for multiple domains
+
 > We use managed infrastructure to focus our efforts on the product we serve as a service, not on the infrastructure that supports it. [DigitalOcean](https://m.do.co/c/70c384d0d807) helps us stay focused on what really matters.
 
 ## Diagram
