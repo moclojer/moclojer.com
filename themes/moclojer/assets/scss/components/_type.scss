@@ -6,6 +6,7 @@ p {
   color: $grey;
   font-family: $font-family-base;
   margin-bottom: 20px;
+  margin-left: 5px;
 }
 h1 {
   font-size: 24px;
@@ -21,6 +22,7 @@ h2 {
   font-size: 20px;
   font-family: $font-family-heading;
   line-height: 1.4;
+  margin-top: 20px;
   margin-bottom: 10px;
   @include media-breakpoint-up(md) {
     font-size: 26px;
@@ -37,8 +39,9 @@ h3 {
 }
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
   li {
     padding: 0;
     margin: 0;
