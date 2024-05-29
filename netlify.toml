@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo mod get && hugo --gc --minify"
+command = "hugo mod tidy && hugo --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "v0.126.1"
