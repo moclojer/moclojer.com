@@ -17,6 +17,16 @@ Below we have a diagram of the architecture we use for **moclojer cloud**:
 * **[moclojer/foss](https://github.com/moclojer/moclojer):** moclojer open source extended as a framework with an isolated thread to sync the `YAML` from the Object Store;
 * **[p001/proxy](https://github.com/moclojer/p001):** reverse proxy for the `moclojer/foss` service;
 
+## Infrastructure
+
+We use [DigitalOcean](https://m.do.co/c/70c384d0d807) as our infrastructure provider, our goal is to serve moclojer foss in a scalable way for all users. To achieve this, we use the [App Platform](https://www.digitalocean.com/products/app-platform/) to serve applications, [Managed Database](https://www.digitalocean.com/products/managed-databases) to provide managed databases (PostgreSQL and Redis), and [Droplet](https://www.digitalocean.com/products/droplets/) to serve the reverse proxy and [Supabase](https://supabase.com/auth) for frontend authentication.
+
+Application logs are sent to [Logtail](https://marketplace.digitalocean.com/add-ons/logtail), installed via [DigitalOcean](https://m.do.co/c/70c384d0d807) add-ons.
+
+> We use managed infrastructure to focus our efforts on the product we serve as a service, not on the infrastructure that supports it. [DigitalOcean](https://m.do.co/c/70c384d0d807) helps us stay focused on what really matters.
+
+## Diagram
+
 {{< mermaid >}}
 graph TD;
 
@@ -53,13 +63,5 @@ graph TD;
     yaml/generator --> object-store;
     moclojer/foss --> object-store;
 {{< /mermaid >}}
-
-## Infrastructure
-
-We use [DigitalOcean](https://m.do.co/c/70c384d0d807) as our infrastructure provider, our goal is to serve moclojer foss in a scalable way for all users. To achieve this, we use the [App Platform](https://www.digitalocean.com/products/app-platform/) to serve applications, [Managed Database](https://www.digitalocean.com/products/managed-databases) to provide managed databases (PostgreSQL and Redis), and [Droplet](https://www.digitalocean.com/products/droplets/) to serve the reverse proxy and [Supabase](https://supabase.com/auth) for frontend authentication.
-
-Application logs are sent to [Logtail](https://marketplace.digitalocean.com/add-ons/logtail), installed via [DigitalOcean](https://m.do.co/c/70c384d0d807) add-ons.
-
-> We use managed infrastructure to focus our efforts on the product we serve as a service, not on the infrastructure that supports it. [DigitalOcean](https://m.do.co/c/70c384d0d807) helps us stay focused on what really matters.
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=70c384d0d807&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
