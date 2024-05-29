@@ -17,7 +17,7 @@ Below we have a diagram of the architecture we use for **moclojer cloud**:
 * **[moclojer/foss](https://github.com/moclojer/moclojer):** moclojer open source extended as a framework with an isolated thread to sync the `YAML` from the Object Store;
 * **[p001/proxy](https://github.com/moclojer/p001):** reverse proxy for the `moclojer/foss` service;
 
-```mermaid
+{{< mermaid >}}
 graph TD;
 
     subgraph "DigitalOcean"
@@ -52,7 +52,7 @@ graph TD;
     cloud/ops --> paas-service;
     yaml/generator --> object-store;
     moclojer/foss --> object-store;
-```
+{{< /mermaid >}}
 
 ## Infrastructure
 
