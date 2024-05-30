@@ -8,14 +8,29 @@ intro_image_hide_on_mobile: false
 
 The [moclojer](https://github.com/moclojer/moclojer) is an Open Source product. To serve it as a service, we created an event-based architecture for event propagation and data processing, generating triggers for specific actions.
 
-Below we have a diagram of the architecture we use for **moclojer cloud**:
+## Backend Services
 
-* **back/api:** RESTful API used to persist data in the database and produce events in the message queue;
-* **frontend:** web interface for user interaction;
-* **yaml/generator:** unifies the `YAML` files of each *mock* into a single `YAML` file saved in the Object Store for `moclojer/foss` to consume;
-* **cloud/ops:** responsible for monitoring and maintaining the infrastructure of domain, DNS, and other tools for host publication control;
-* **[moclojer/foss](https://github.com/moclojer/moclojer):** moclojer open source extended as a framework with an isolated thread to sync the `YAML` from the Object Store;
-* **[p001/proxy](https://github.com/moclojer/p001):** reverse proxy for the `moclojer/foss` service;
+The following are the services and integrations that keep moclojer's backend alive:
+
+* **back/api**: acts primarily as an API gateway for all client interactions, handling requests and routing them to appropriate services through message queues. Encapsulates initial business logic for user mocks, propagating necessary events to other services;
+* **yaml/generator**: is responsible for updating every mock, as a processed and validated raw file, for any event, may it be creation, deletion, update, etc. It also manages a main raw mock file, which we call the `unified mock`, where all user mocks are aggregated, in order to be used in `moclojer/foss`'s runtime. The generated raw files are stored in our `object-store`;
+* **cloud/ops**: manages and monitors our infrastructure, user mock domains and DNS records, by applying a facade on our two current used cloud solutions, namely DigitalOcean and CloudFlare;
+* **[moclojer/foss](https://github.com/moclojer/moclojer)**: the open source version of moclojer, extended as a framework within an isolated service. Based on the content of the `unified mock` given from consequent events from `yaml/generator`, serves unique mock endpoints, acting therefore as the final API.
+
+## Web Frontend
+
+We currently serve a web interface for user interactions.
+
+* **Stack**: ClojureScript, [Helix](https://github.com/lilactown/helix), [Refx](https://github.com/ferdinand-beyer/refx), TailwindCSS.
+
+## Data Layer
+
+* **Postgres**: We use Postgres as our main database.
+* **Redis**: since moclojer is event-driven, we use Redis as a message broker, through its Pub/Sub mechanism.
+
+## Communication and Integration
+
+* **[p001/proxy](https://github.com/moclojer/p001):** a reverse proxy for our internal services that accesses outsider APIs;
 
 ## Infrastructure
 
@@ -36,13 +51,15 @@ We have two applications on the App Platform:
 * `workers` running the **yaml/generator** and **cloud/ops**
 * `databases` running the **postgres** and **redis/mq** managed
 
-**moclojer/foss**
+**moclojer-foss**
 
 * `services` serving the **moclojer/foss**, with `ingress` *(public access)* - with support for multiple domains
 
 > We use managed infrastructure to focus our efforts on the product we serve as a service, not on the infrastructure that supports it. [DigitalOcean](https://m.do.co/c/70c384d0d807) helps us stay focused on what really matters.
 
-## Diagram
+### Infrastructure & Overall Architecture
+
+This is a simplified overview of how our described services connect and interact between themselves after built, deployed and running on Digital Ocean.
 
 {{< mermaid >}}
 graph TD;
@@ -75,7 +92,7 @@ graph TD;
     frontend --> back/api;
     frontend --> supabase/auth;
     cloud/ops --> redis/mq;
-    cloud/ops --> p001/proxy --> dns-service;
+    cloud/ops --> p001/proxy --> dns-services;
     cloud/ops --> paas-service;
     yaml/generator --> object-store;
     moclojer/foss --> object-store;
