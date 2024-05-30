@@ -38,6 +38,8 @@ We use [DigitalOcean](https://m.do.co/c/70c384d0d807) as our infrastructure prov
 
 Application logs are sent to [Logtail](https://marketplace.digitalocean.com/add-ons/logtail), installed via [DigitalOcean](https://m.do.co/c/70c384d0d807) add-ons.
 
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=70c384d0d807&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 ### App Platform
 
 The [App Platform](https://www.digitalocean.com/products/app-platform/) is a platform as a service (PaaS) that enables developers to build, deploy, and scale applications quickly and easily. It supports several programming languages, including Clojure 💜, and provides a range of features to help developers build and deploy applications more efficiently.
@@ -57,7 +59,7 @@ We have two applications on the App Platform:
 
 > We use managed infrastructure to focus our efforts on the product we serve as a service, not on the infrastructure that supports it. [DigitalOcean](https://m.do.co/c/70c384d0d807) helps us stay focused on what really matters.
 
-### Infrastructure & Overall Architecture
+### Overall Architecture
 
 This is a simplified overview of how our described services connect and interact between themselves after built, deployed and running on Digital Ocean.
 
@@ -97,8 +99,6 @@ graph TD;
     yaml/generator --> object-store;
     moclojer/foss --> object-store;
 {{< /mermaid >}}
-
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=70c384d0d807&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
 ## Overall Sequence Behaviour
 
