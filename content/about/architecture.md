@@ -99,3 +99,69 @@ graph TD;
 {{< /mermaid >}}
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=70c384d0d807&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
+## Overall Sequence Behaviour
+
+This is an overview of how an optimistic run of the use case of a mock creation gets our services to work together.
+
+{{< mermaid >}}
+sequenceDiagram;
+
+    participant frontend;
+    participant back/api;
+    participant db;
+    participant yaml/gen;
+    participant cloud/ops;
+    box cloud providers
+        participant cloudflare;
+        participant digitalocean;
+    end
+
+    frontend ->>+ back/api: post /mocks;
+    back/api ->>+ db: insert mock;
+    db ->>- back/api: ok;
+    back/api -->> yaml/gen: generate mock file;
+    back/api ->>- frontend: 200 ok;
+
+    loop mock offline
+        frontend ->>+ back/api: get /mocks/123/publication;
+        back/api ->>+ db: select mock publication status;
+        db ->>- back/api: ok;
+    end
+
+    yaml/gen -->> yaml/gen: generated unified mock file;
+    yaml/gen -->> cloud/ops: create domain;
+    cloud/ops ->>+ cloudflare: create DNS record;
+    cloudflare ->>- cloud/ops: 200 ok;
+    cloud/ops ->>+ digitalocean: create domain;
+    digitalocean ->>- cloud/ops: 200 ok;
+    cloud/ops ->> back/api: mock published;
+    back/api ->>+ db: update mock published;
+    db ->>- back/api: ok
+{{< /mermaid >}}
+
+## Event Flow
+
+As said before, we use Redis MQ in order to provide communication between our services, through Redis's Pub/Sub capabilities. Our queues are, separated by service, specifically:
+
+* mock/api
+
+** **domains.verification.dispatch**: a job at every 2 minutes that aggregates offline mocks to be verified, dispatching them to **`domain.verify`**;
+** **unified.verification.dispatch**: a job at every 5 minutes that aggregates published mocks to be verified, dispatching them to **`unified.verify`**;
+* **mock.publication**: sets a mock publication status;
+
+* yaml/generator
+
+** **mock.changed**: received when a mock content changes. It is saved to our `object-store`, and packaged to be unified;
+** **mock.unified**: aggregates the new changed mock to the global `unified mock`, used thereafter by `moclojer/foss`;
+** **mock.deleted**: removes given mock from our `object-store` and signals the recreation of the global `unified mock`;
+** **unified.verify**: given the aggregated mocks, verifies if each of them is in teh `unified mock`, signaling the recreation if not;
+
+* cloud/ops
+
+** **domain.create**: interacts with DigitalOcean and CloudFlare, in order to setup the new domain host and DNS records;
+** **domain.verify**: verifies the existence and validity of the newly created host, firing `mock.publication` thereafter;
+
+* moclojer/foss
+
+** **restart.mocks**: syncs to the `unified mock`, restarting the running moclojer server instance;
