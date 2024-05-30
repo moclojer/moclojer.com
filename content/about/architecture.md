@@ -19,13 +19,13 @@ The following are the services and integrations that keep moclojer's backend ali
 
 ## Web Frontend
 
-We currently serve a web interface for user interactions.
+We serve a [web interface](https://app.moclojer.com) for user interactions. This interface is responsible for interacting with our Backend Services and deliver updates to our user.
 
 * **Stack**: ClojureScript, [Helix](https://github.com/lilactown/helix), [Refx](https://github.com/ferdinand-beyer/refx), TailwindCSS.
 
 ## Data Layer
 
-* **Postgres**: We use Postgres as our main database.
+* **Postgres**: we use postgres as our main database.
 * **Redis**: since moclojer is event-driven, we use Redis as a message broker, through its Pub/Sub mechanism.
 
 ## Communication and Integration
@@ -144,24 +144,24 @@ sequenceDiagram;
 
 As said before, we use Redis MQ in order to provide communication between our services, through Redis's Pub/Sub capabilities. Our queues are, separated by service, specifically:
 
-* mock/api
+**mock/api**
 
-** **domains.verification.dispatch**: a job at every 2 minutes that aggregates offline mocks to be verified, dispatching them to **`domain.verify`**;
-** **unified.verification.dispatch**: a job at every 5 minutes that aggregates published mocks to be verified, dispatching them to **`unified.verify`**;
+* **domains.verification.dispatch**: a job at every 2 minutes that aggregates offline mocks to be verified, dispatching them to **`domain.verify`**;
+* **unified.verification.dispatch**: a job at every 5 minutes that aggregates published mocks to be verified, dispatching them to **`unified.verify`**;
 * **mock.publication**: sets a mock publication status;
 
-* yaml/generator
+**yaml/generator**
 
-** **mock.changed**: received when a mock content changes. It is saved to our `object-store`, and packaged to be unified;
-** **mock.unified**: aggregates the new changed mock to the global `unified mock`, used thereafter by `moclojer/foss`;
-** **mock.deleted**: removes given mock from our `object-store` and signals the recreation of the global `unified mock`;
-** **unified.verify**: given the aggregated mocks, verifies if each of them is in teh `unified mock`, signaling the recreation if not;
+* **mock.changed**: received when a mock content changes. It is saved to our `object-store`, and packaged to be unified;
+* **mock.unified**: aggregates the new changed mock to the global `unified mock`, used thereafter by `moclojer/foss`;
+* **mock.deleted**: removes given mock from our `object-store` and signals the recreation of the global `unified mock`;
+* **unified.verify**: given the aggregated mocks, verifies if each of them is in teh `unified mock`, signaling the recreation if not;
 
-* cloud/ops
+**cloud/ops**
 
-** **domain.create**: interacts with DigitalOcean and CloudFlare, in order to setup the new domain host and DNS records;
-** **domain.verify**: verifies the existence and validity of the newly created host, firing `mock.publication` thereafter;
+* **domain.create**: interacts with DigitalOcean and CloudFlare, in order to setup the new domain host and DNS records;
+* **domain.verify**: verifies the existence and validity of the newly created host, firing `mock.publication` thereafter;
 
-* moclojer/foss
+**moclojer/foss**
 
-** **restart.mocks**: syncs to the `unified mock`, restarting the running moclojer server instance;
+* **restart.mocks**: syncs to the `unified mock`, restarting the running moclojer server instance;
