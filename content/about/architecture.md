@@ -13,7 +13,7 @@ The [moclojer](https://github.com/moclojer/moclojer) is an Open Source product. 
 The following are the services and integrations that keep moclojer's backend alive:
 
 * **back/api**: acts primarily as an API gateway for all client interactions, handling requests and routing them to appropriate services through message queues. Encapsulates initial business logic for user mocks, propagating necessary events to other services;
-* **yaml/generator**: is responsible for updating every mock, as a processed and validated raw file, for any event, may it be creation, deletion, update, etc. It also manages a main raw mock file, which we call the `unified mock`, where all user mocks are aggregated, in order to be used in `moclojer/foss`'s runtime. The generated raw files are stored in our `object-store`;
+* **yaml/generator**: updates and validates every mock for events like creation, deletion, and updates. It manages the `unified mock`, aggregating all user mocks for use in `moclojer-foss`'s runtime. Generated files are stored in our `object-store`;
 * **cloud/ops**: manages and monitors our infrastructure, user mock domains and DNS records, by applying a facade on our two current used cloud solutions, namely DigitalOcean and CloudFlare;
 * **[moclojer/foss](https://github.com/moclojer/moclojer)**: the open source version of moclojer, extended as a framework within an isolated service. Based on the content of the `unified mock` given from consequent events from `yaml/generator`, serves unique mock endpoints, acting therefore as the final API.
 
@@ -142,7 +142,7 @@ sequenceDiagram;
 
 ## Event Flow
 
-As said before, we use Redis MQ in order to provide communication between our services, through Redis's Pub/Sub capabilities. Our queues are, separated by service, specifically:
+As previously mentioned, we use Redis MQ to facilitate communication between services via Redis's Pub/Sub capabilities. Our queues are, separated by service, specifically:
 
 **mock/api**
 
@@ -159,7 +159,7 @@ As said before, we use Redis MQ in order to provide communication between our se
 
 **cloud/ops**
 
-* **domain.create**: interacts with DigitalOcean and CloudFlare, in order to setup the new domain host and DNS records;
+* **domain.create**: interacts with DigitalOcean and CloudFlare to set up the new domain host and DNS records;
 * **domain.verify**: verifies the existence and validity of the newly created host, firing `mock.publication` thereafter;
 
 **moclojer/foss**
