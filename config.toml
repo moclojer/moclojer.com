@@ -11,6 +11,10 @@ theme = "moclojer"
 [[module.imports]]
   path = "github.com/hugomods/mermaid"
 
+
+[[module.imports]]
+  path = 'github.com/hugomods/images'
+
 [params]
   # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
   google_analytics_id = "G-JWE70HZXRV"
@@ -69,13 +73,17 @@ theme = "moclojer"
       url = "/team/"
       weight = 3
   [[menu.main]]
+      name = "Blog"
+      url = "/blog/"
+      weight = 4
+  [[menu.main]]
       name = "About"
       url = "/about/"
-      weight = 4
+      weight = 5
   [[menu.main]]
     name = "Login"
     url = "https://app.moclojer.com/"
-    weight = 5
+    weight = 6
 
   # Footer Menu
   [[menu.footer]]
@@ -87,10 +95,14 @@ theme = "moclojer"
     url = "/about/careers/"
     weight = 2
   [[menu.footer]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+  [[menu.footer]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 4
   [[menu.footer]]
     name = "Terms of Use"
     url = "/about/term-of-use/"
-    weight = 4
+    weight = 5
