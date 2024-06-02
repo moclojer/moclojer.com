@@ -16,6 +16,9 @@ theme = "moclojer"
   path = 'github.com/hugomods/images'
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     anchorLineNos = true
     codeFences = true
