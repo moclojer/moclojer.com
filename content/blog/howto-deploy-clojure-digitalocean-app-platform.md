@@ -4,6 +4,7 @@ date: 2024-05-01T01:00:00+10:00
 tags: ["digitalocean", "app-platform", "clojure", "docker", "tutorial"]
 images: ["/blog/howto-deploy-clojure-digitalocean-app-platform.jpg"]
 description: "Deploying a Clojure application on DigitalOcean's App Platform using Docker is easy and fast. Follow this tutorial to deploy your Clojure application."
+author: "<a href='https://github.com/avelino' alt='Thiago Avelino content author' target='_blank'>Thiago Avelino</a>"
 ---
 
 ![Howto deploy Clojure DigitalOcean App Platform](/blog/howto-deploy-clojure-digitalocean-app-platform.jpg?width=50%)
@@ -65,7 +66,7 @@ To simplify understanding, we will create a basic HTTP server in Clojure ([reiti
   (println "server running in port 3000"))
 ```
 
-We placed the project files in this repository [clojure-to-digitalocean-app-platform](https://github.com/moclojer/clojure-to-digitalocean-app-platform) for you to follow the tutorial.
+[[2024_06_18]]
 
 ## Creating the application on App Platform
 
