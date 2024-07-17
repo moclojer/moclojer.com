@@ -2,8 +2,8 @@
 title: "Our lib `clj-rq` is finally stable"
 date: 2024-07-16T01:00:00+10:00
 tags: ["foss", "clj-rq", "release", "redis"]
-images: ["/blog/<TODO MAKE A THUMBNAIL>.jpg"]
-description: "We have recently released the latest stable version for our lib `clj-rq`. Besides "
+images: ["/blog/our-lib-clj-rq-is-finally-stable.png"]
+description: "We have recently released the latest stable version for our lib `clj-rq`."
 author: "<a href='https://github.com/j0suetm' alt=Josué Teodoro content author' target='_blank'>Josué Teodoro</a>"
 ---
 
