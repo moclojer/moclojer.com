@@ -7,6 +7,8 @@ description: "We have recently released the latest stable version for our lib `c
 author: "<a href='https://github.com/j0suetm' alt='Josué Teodoro content author' target='_blank'>Josué Teodoro</a>"
 ---
 
+![Our lib `clj-rq` is finally stable](/blog/our-lib-clj-rq-is-finally-stable.png?width=50%)
+
 We are thrilled to announce that we've hit an important milestone for `clj-rq`, an in-house library of ours that has been developed and implemented in our services for the past couple of months and is finally being used and tested in production. The current version [`v0.1.4`](https://github.com/moclojer/clj-rq/releases/tag/v0.1.4) brings implementations intrinsic to both queue and pubsub mechanisms that weren't available in the past versions.
 
 ## What's `clj-rq`
