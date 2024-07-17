@@ -4,7 +4,7 @@ date: 2024-07-16T01:00:00+10:00
 tags: ["foss", "clj-rq", "release", "redis"]
 images: ["/blog/our-lib-clj-rq-is-finally-stable.png"]
 description: "We have recently released the latest stable version for our lib `clj-rq`."
-author: "<a href='https://github.com/j0suetm' alt=Josué Teodoro content author' target='_blank'>Josué Teodoro</a>"
+author: "<a href='https://github.com/j0suetm' alt='Josué Teodoro content author' target='_blank'>Josué Teodoro</a>"
 ---
 
 We are thrilled to announce that we've hit an important milestone for `clj-rq`, an in-house library of ours that has been developed and implemented in our services for the past couple of months and is finally being used and tested in production. The current version [`v0.1.4`](https://github.com/moclojer/clj-rq/releases/tag/v0.1.4) brings implementations intrinsic to both queue and pubsub mechanisms that weren't available in the past versions.
@@ -15,7 +15,7 @@ In case you don't know `clj-rq` yet, it's described, in verbatim from its [Githu
 
 > RQ (Redis Queue) is a simple Clojure package for queueing jobs and processing them in the background with workers. It is backed by Redis and it is designed to have a low barrier to entry.
 
-We began developing it back in May, as an in-house alternative to the currently existing Redis Clojure libraries and wrappers, which were giving us really bad runtime errors.
+We began developing it back in May, as an in-house alternative to the currently existing Redis Clojure libraries and wrappers, which were causing significant runtime errors.
 
 > We eventually reached out to `carmine`, one of the libraries that weren't working for us, and reported the issues, which actually got solved.
 
@@ -52,7 +52,7 @@ The following examples summarize how `clj-rq`'s API can be used.
 (rq/close-client client)
 ```
 
-**Queue**
+### Queue
 
 ```clojure
 ;; pushing 
@@ -62,6 +62,8 @@ The following examples summarize how `clj-rq`'s API can be used.
 (println :size (queue/llen client "my-queue"))
 (prn :popped (queue/pop! client "my-queue"))
 ```
+
+### Pub/Sub
 
 ```clojure
 ;; pub/sub
