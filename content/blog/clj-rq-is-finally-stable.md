@@ -29,7 +29,7 @@ We distribute the library via [Clojars](https://clojars.org/com.moclojer/rq).
 
 [![Clojars Project](https://img.shields.io/clojars/v/com.moclojer/rq.svg)](https://clojars.org/com.moclojer/rq)
 
-**edn:**
+**deps.edn:**
 
 ```edn
 com.moclojer/rq {:mvn/version "0.1.4"}
@@ -102,5 +102,23 @@ Operations by default follow the Queue order (I mean, look at the name of the li
 ## Using `stuartsierra`'s component lib
 
 If you use stuartsierra's component lib, we've also recently released our `components` bundle version `v0.1.0`. It wraps `clj-rq` and presents you with a seamless and simple integration.
+
+### Installation
+
+We distribute `components` via [Clojars](https://clojars.org/com.moclojer/components).
+
+[![Clojars Project](https://img.shields.io/clojars/v/com.moclojer/components.svg)](https://clojars.org/com.moclojer/components)
+
+**deps.edn:**
+
+```edn
+com.moclojer/components {:mvn/version "0.1.0"}
+```
+
+**project.clj:**
+
+```clojure
+[com.moclojer/components "0.1.0"]
+```
 
 > Be sure to check the latest versions incase you're reading this in the future.
