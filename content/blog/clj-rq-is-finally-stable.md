@@ -7,11 +7,19 @@ description: "We have recently released the latest stable version for our lib `c
 author: "<a href='https://github.com/j0suetm' alt=Josué Teodoro content author' target='_blank'>Josué Teodoro</a>"
 ---
 
-We are thrilled to announce that we've hit an important milestone for `clj-rq`, an in-house library of ours that has been developed and implemented in our services for the past couple months is finally being used and tested in production. In case you don't know `clj-rq` yet, it's described, in verbatim from its [Github Page](https://github.com/moclojer/clj-rq) as follows:
+We are thrilled to announce that we've hit an important milestone for `clj-rq`, an in-house library of ours that has been developed and implemented in our services for the past couple of months and is finally being used and tested in production. The current version [`v0.1.4`](https://github.com/moclojer/clj-rq/releases/tag/v0.1.4) brings implementations intrinsic to both queue and pubsub mechanisms that weren't available in the past versions.
+
+## What's `clj-rq`
+
+In case you don't know `clj-rq` yet, it's described, in verbatim from its [Github Page](https://github.com/moclojer/clj-rq) as follows:
 
 > RQ (Redis Queue) is a simple Clojure package for queueing jobs and processing them in the background with workers. It is backed by Redis and it is designed to have a low barrier to entry.
 
-The current version [`v0.1.4`](https://github.com/moclojer/clj-rq/releases/tag/v0.1.4) brings implementations intrinsic to both queue and pubsub mechanisms that weren't available in the past versions.
+We began developing it back in May, as an in-house alternative to the currently existing Redis Clojure libraries and wrappers, which were giving us really bad runtime errors.
+
+> We eventually reached out to `carmine`, one of the libraries that weren't working for us, and reported the issues, which actually got solved.
+
+It's currently being used in our services, and it has been working greatly. Overall, the main goal of the library, if not already understood through the given description, is to be a simple Clojure wrapper over Redis' Jedis. We haven't reached 100% coverage yet, but we're working on it.
 
 ## Installation
 
