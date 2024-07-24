@@ -3,7 +3,7 @@ title: "Clojure Development Workflow Tips"
 date: 2024-07-24T01:00:00+10:00
 tags: ["clojure", "tip", "team", "dev"]
 images: ["blog/clojure-development-workflow.png"]
-description: "We'd like to share the REAL way to code clojure"
+description: "Discover essential tips and best practices for optimizing your Clojure development workflow, focusing on command line tools and efficient coding techniques."
 author: "<a href='https://github.com/Felipe-gsilva' alt='Felipe Gomes da Silva content author' target='_blank'>Felipe Gomes</a>"
 ---
 
