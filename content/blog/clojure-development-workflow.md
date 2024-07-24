@@ -95,4 +95,4 @@ The default keybindings are:
 
 - Also, if you are starting on clojure, follow the [official spec](https://clojure.org/guides/install_clojure) and maybe give a try to [stuartsierra's](https://www.youtube.com/watch?v=13cmHf_kt-Q) video on component pattern.
 
-That's all, folks, thanks for reading.
+That's all, folks! Thanks for reading.
