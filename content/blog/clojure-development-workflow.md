@@ -1,5 +1,5 @@
 ---
-title: "Clojure Development Workflow Tips"
+title: "Essential tips for developing with Clojure"
 date: 2024-07-24T01:00:00+10:00
 tags: ["clojure", "tip", "team", "dev"]
 images: ["blog/clojure-development-workflow.png"]
@@ -18,6 +18,8 @@ In order to accomplish that, we must set some things up.
 
 You will need to run nREPL on your clojure project and there are a few ways to deal with it.
 
+> if you use emacs, jump to [emacs section](#Emacs).
+
 `deps.edn`:
 
 ```clj
@@ -26,6 +28,7 @@ You will need to run nREPL on your clojure project and there are a few ways to d
           :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}}
 ;; ...
 ```
+
 this way, you will be able to run a nREPL with `clj -M:nrepl`
 
 and `leiningen`:
