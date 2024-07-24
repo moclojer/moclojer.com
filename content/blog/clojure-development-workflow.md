@@ -9,7 +9,7 @@ author: "<a href='https://github.com/Felipe-gsilva' alt='Felipe Gomes da Silva c
 
 ![Clojure Development Workflow Tips](/blog/clojure-development-workflow.png?width=50%)
 
-We'd like to share our general development workflow and how we work with clojure, mainly on CLI. As a great team, we all share the tasteful and meaningful life of using `Linux` (although some part of the crew uses MacOS, we will talk mainly about the penguim system, because it is just better..). So, we decided to share the way we use our linux machines to test clojure while coding.
+We'd like to share our general development workflow and how we work with clojure, mainly on CLI. As a great team, we all share the tasteful and meaningful life of using `Linux` (although some part of the crew uses macOS, we will talk mainly about the penguin system because it is just better). So, we decided to share the way we use our linux machines to test clojure while coding.
 
 
 ## nREPL on runtime
