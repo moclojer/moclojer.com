@@ -1,7 +1,7 @@
 ---
 title: "Essential tips for developing with Clojure"
 date: 2024-07-24T01:00:00+10:00
-tags: ["clojure", "tip", "team", "dev"]
+tags: ["clojure", "tip", "team", "dev", "emacs", "neovim", "nREPL"]
 images: ["/blog/clojure-development-workflow.png"]
 description: "Discover essential tips and best practices for optimizing your Clojure development workflow, focusing on command line tools and efficient coding techniques."
 author: "<a href='https://github.com/Felipe-gsilva' alt='Felipe Gomes da Silva content author' target='_blank'>Felipe Gomes</a>"
@@ -76,7 +76,7 @@ The development process using Emacs is just as simple. You only need to have the
 
 It is recommended, as we aim to follow TDD methodology, to enable the `auto-test` mode of cider. This way, when you evaluate a file or group of files, cider will automatically re-evaluate and run any related tests.
 
-```lisp
+```elisp
 (add-hook 'clojure-mode-hook #'cider-auto-test-mode)
 ```
 
@@ -92,7 +92,7 @@ The default keybindings are:
 
 ## Extra
 
-- You can find our latest devlogs and some other content on [Moclojer.com](https://www.moclojer.com/blog/) 
+- You can find our latest devlogs and some other content on [moclojer blog](https://www.moclojer.com/blog/) 
 
 - Want to go a step ahead on neovim? try using the [paredit-nvim](https://github.com/julienvincent/nvim-paredit) plugin.
 
