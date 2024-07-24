@@ -14,7 +14,7 @@ We'd like to share our general development workflow and how we work with clojure
 
 ## nREPL on runtime
 A common practice you must have while developing Clojure applications is to serve your code editor with your [nREPL](https://github.com/nrepl/nREPL) and test all your functions while writing your code.
-To accomplish that, we must set up some things before.
+In order to accomplish that, we must set some things up.
 
 You will need to run nREPL on your clojure project and there are a few ways to deal with it.
 
