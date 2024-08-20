@@ -9,8 +9,15 @@ HUGO_ENABLEGITINFO = "true"
 GO_VERSION = "1.22.3"
 
 [[plugins]]
-  package = "@netlify/plugin-lighthouse"
+package = "@netlify/plugin-lighthouse"
 
-  # optional, deploy the lighthouse report to a path under your site
-  [plugins.inputs.audits]
-    output_path = "reports/lighthouse.html"
+# optional, deploy the lighthouse report to a path under your site
+[plugins.inputs.audits]
+output_path = "reports/lighthouse.html"
+
+[[redirects]]
+from = "/about/architecture/"
+to = "/about/eng/architecture/"
+status = 301
+force = true
+query = { path = ":path" }
