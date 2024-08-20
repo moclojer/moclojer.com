@@ -1,6 +1,6 @@
 ---
 title: 'GitHub: WIP vs Draft'
-date: 2023-07-22T00:00:00+07:00
+date: 2023-06-22T00:00:00+07:00
 intro_image: "images/illustrations/open-source.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
