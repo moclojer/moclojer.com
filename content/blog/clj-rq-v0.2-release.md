@@ -68,7 +68,7 @@ For those who lack time, here follows a simple showcase of `clj-rq`. Virtually, 
 ;; queue
 (queue/push! *redis-pool* "my-queue"
              ;; has to be an array of the elements to push
-             [{:now (java.time.localdatetime/now)
+             [{:now (java.time.LocalDateTime/now)
               :foo "bar"}])
 
 (println :size (queue/len *redis-pool* "my-queue"))
