@@ -2,12 +2,12 @@
 title: "Our lib `clj-rq` now generates itself dynamically"
 date: 2024-08-23T01:00:00+10:00
 tags: ["foss", "clj-rq", "release"]
-images: TODO
-description: "`clj-rq` functions are now dynamically generated directly from Jedis' source code."
+images: ["/blog/clj-rq-now-generates-itself-dynamically.png"]
 author: "<a href='https://github.com/j0suetm' alt='Josué Teodoro content author' target='_blank'>Josué Teodoro</a>"
+description: "`clj-rq` functions are now dynamically generated directly from Jedis' source code."
 ---
 
-![`clj-rq` now generates itself dynamically](TODO)
+![`clj-rq` now generates itself dynamically](/blog/clj-rq-now-generates-itself-dynamically.png)
 
 A month ago, we published in our blog the thrilling first stable release of our library [clj-rq](https://github.com/moclojer/clj-rq). You can read more of this post [here](./clj-rq-is-finally-stable.md).
 
@@ -50,8 +50,6 @@ com.moclojer/rq {:mvn/version "0.2.1"}
 ```
 
 > Be sure to check the latest versions incase you're reading this in the future.
-
-
 
 ## Showcase
 
