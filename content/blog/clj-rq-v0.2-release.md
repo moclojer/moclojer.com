@@ -24,7 +24,7 @@ One of the first comments that got between ourselves, the [moclojer team](https:
 
 ## Under the hood
 
-This inspired us to remodel `clj-rq`, in order to dynamically generate itself, in this simplified procedure:
+This inspired us to remodel `clj-rq` to dynamically generate itself, using this simplified procedure:
 
 1. By using reflection, load the predefined methods from the Jedis library;
 2. Parse these raw methods into a usable data structure;
@@ -46,7 +46,7 @@ com.moclojer/rq {:mvn/version "0.2.1"}
 **project.clj:**
 
 ```clojure
-[com.moclojer/rq "0.2.1]
+[com.moclojer/rq "0.2.1"]
 ```
 
 > Be sure to check the latest versions incase you're reading this in the future.
@@ -95,7 +95,7 @@ For those who lack time, here follows a simple showcase of `clj-rq`. Virtually, 
 
 For a more extensive documentation of the supported commands, give a look at our [readme](https://github.com/moclojer/clj-rq/tree/main?tab=readme-ov-file#functions).
 
-It is important to remember that this change doesn't invalidate the work of our open source engineers. There was a lot of thought and time spent to make sure our lib is delivered top-notch and ready for production. It is, nonetheless, easier to be maintained now 😃.
+It is important to remember that this change doesn't invalidate the work of our open source engineers. There was a lot of thought and time spent to make sure our lib is delivered top-notch and ready for production. It is, nonetheless, easier to maintain now 😃.
 
 ## Using `stuartsierra`'s component lib
 
