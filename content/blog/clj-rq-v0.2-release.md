@@ -9,7 +9,7 @@ description: "`clj-rq` functions are now dynamically generated directly from Jed
 
 ![`clj-rq` now generates itself dynamically](/blog/clj-rq-now-generates-itself-dynamically.png)
 
-A month ago, we published in our blog the thrilling first stable release of our library [clj-rq](https://github.com/moclojer/clj-rq). You can read more of this post [here](./clj-rq-is-finally-stable.md).
+A month ago, we published in our blog the thrilling first stable release of our library [clj-rq](https://github.com/moclojer/clj-rq). You can read more of this post [here](../clj-rq-is-finally-stable.md).
 
 > For the newcomers, [clj-rq](https://github.com/moclojer/clj-rq) is a homebrewed library that wraps Jedis, being itself a simple Redis library for the Clojure ecosystem.
 
