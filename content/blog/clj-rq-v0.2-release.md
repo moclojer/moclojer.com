@@ -7,7 +7,7 @@ author: "<a href='https://github.com/j0suetm' alt='Josué Teodoro content author
 description: "`clj-rq` functions are now dynamically generated directly from Jedis' source code."
 ---
 
-![`clj-rq` now generates itself dynamically](/blog/clj-rq-now-generates-itself-dynamically.png)
+![`clj-rq` now generates itself dynamically](/blog/clj-rq-now-generates-itself-dynamically.png?width=50%)
 
 A month ago, we published in our blog the thrilling first stable release of our library [clj-rq](https://github.com/moclojer/clj-rq). You can read more of this post [here](../clj-rq-is-finally-stable.md).
 
