@@ -10,7 +10,7 @@ author: "<a href='https://github.com/Felipe-gsilva' alt='Felipe Gomes da Silva c
 ![mockingbird](/blog/mockingbird/mockingbird-logo-full-hd.png)
 
 We're excited to introduce **Mockingbird**, a design system that seamlessly integrates [Tailwind CSS](https://tailwindcss.com/) and [Helix](https://github.com/lilactown/helix) into [ClojureScript](https://clojurescript.org/). Mockingbird simplifies user interface development, offering a consistent user experience without the need for excessive CSS embedded within your ClojureScript code—unless, of course, you want to! 
-> This is not a stable build yet, but we want to share what the team is currently working on to make our dear [moclojer-app](app.moclojer.com) better everyday!!
+> This is not a stable build yet, but we want to share what the team is currently working on to make our dear moclojer-app.
 
 ## The Name Reference
 
