@@ -6,25 +6,20 @@ intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
 
-We are a customer-focused company using open source and we use clojure by design to develop our solutions. Our business model is SaaS, providing a version of the Open Source moclojer hosted on our infrastructure.
+We are an open source organization that was born with the goal of contributing to the Clojure/Script ecosystem by creating a toolkit to simplify the development of Terminal User Interface (TUI) solutions in Clojure and other tools that enhance the Clojure development experience.
 
-The moclojer supports API-first development with the API Builder. You can design your API directly with moclojer using the `yaml`, `edn`, and `OpenAPI 3` specification. Your specification can then act as the only source of truth for your API design, and you can use it to generate documentation, mock servers, and client SDKs.
+Our business model is based on providing hosted versions of our open source projects as SaaS solutions, while maintaining our commitment to the open source community.
 
-## Our way of looking at the economy is open and decentralized, what do we mean by that?
+## Our Mission
 
-We deal openly with money, from our team's remuneration to the company's turnover. We are transparent about our costs and our income. We are decentralized in the sense that we are not tied to a specific location, we are a remote-first company.
+We develop products with "clojure by design" principles, focusing on:
 
-In order to improve our product, we will help the Clojure ecosystem by opening up the solutions we develop internally to the Open Source (Clojure) community as much as possible. We will also contribute to the community by participating in the development of various libraries and the clojure ecosystem.
+- **Simplicity**: Creating tools that are easy to use and understand
+- **Efficiency**: Building high-performance solutions with minimal overhead
+- **Developer Experience**: Prioritizing a smooth and enjoyable development experience
+- **Open Source**: Sharing our work with the community under permissive licenses
 
-## Mission
-
-Build mock api with a friendly and fluid experience, without the need to depend on an engineer (low code), for engineering teams to give a fluid experience connected to backend development.
-
-## Vision
-
-To be recognized as the company that develops open source solutions to simplify mock api development and simplify the experience of maintaining the mock configuration (it shouldn't be boring, but connected to the actual development of the api).
-
-## Values
+## Our Values
 
 Fuel that feeds our **culture**!
 
@@ -40,8 +35,12 @@ Usually, customers are right, our solutions should be developed with the custome
 
 ### Product engineering
 
-We call engineers product engineers, meaning that we deliver better software by understanding the customer's needs and using the products we develop *(empathy with the customer's “pain”)*.
+We call engineers product engineers, meaning that we deliver better software by understanding the customer's needs and using the products we develop *(empathy with the customer's "pain")*.
 
 ### Clojure by design
 
 Whatever we develop, it will be developed using **Clojure**. This does not restrict us from using/contributing services, software, etc. written in another programming language, but our software will be written in *Clojure*.
+
+## Join Our Community
+
+We welcome contributions from the community! If you're interested in Clojure/ClojureScript development and want to contribute to our projects, visit our [GitHub organization](https://github.com/moclojer) to get started.

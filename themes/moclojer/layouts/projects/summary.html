@@ -1,0 +1,16 @@
+<div class="service service-summary">
+  <div class="service-content">
+    <h2 class="service-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <p>{{ .Params.description }}</p>
+    <div class="project-links">
+      {{ if .Params.github_url }}
+      <a href="{{ .Params.github_url }}" target="_blank" class="project-link github">GitHub</a>
+      {{ end }}
+      {{ if .Params.docs_url }}
+      <a href="{{ .Params.docs_url }}" target="_blank" class="project-link docs">Docs</a>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,13 +1,13 @@
 // Colors
-$primary: {{ .Site.Params.colors.primary | default "#FF009E" }};
-$black: {{ .Site.Params.colors.black | default "#22212C" }};
-$white: {{ .Site.Params.colors.white | default "#ffffff" }};
-$white-offset: {{ .Site.Params.colors.white_offset | default "#F8F8F2" }};
-$grey: {{ .Site.Params.colors.grey | default "#454158" }};
+$primary: #FF009E;
+$black: #22212C;
+$white: #ffffff;
+$white-offset: #F8F8F2;
+$grey: #454158;
 
 // Fonts
-$font-family-base: {{ .Site.Params.fonts.base }}, Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: {{ .Site.Params.fonts.heading }}, serif, -apple-system;
+$font-family-base: "Source Sans Pro", Helvetica, Arial, sans-serif, -apple-system;
+$font-family-heading: "Playfair Display", serif, -apple-system;
 
 // Links
 $link-color: $primary;
@@ -54,11 +54,13 @@ $sub-footer-text-color: $white;
 @import 'pages/home';
 @import 'pages/team/team-summary';
 @import 'pages/services/page-services-single';
+@import 'pages/projects';
 
 body {
   font-size: 16px;
   line-height: 1.2;
   font-family: $font-family-base;
+
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 1.3;

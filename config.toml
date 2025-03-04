@@ -1,6 +1,6 @@
 baseURL = "https://www.moclojer.com"
 languageCode = "en-us"
-title = "api server mock - moclojer"
+title = "moclojer - Open Source Clojure Projects"
 theme = "moclojer"
 
 [module]
@@ -51,7 +51,7 @@ theme = "moclojer"
     mobile_height = "36px"
     desktop = "images/logo/logo-moclojer-icon.png"
     desktop_height = "36px"
-    alt = "api server mock - moclojer"
+    alt = "moclojer - Open Source Clojure Projects"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
@@ -80,29 +80,33 @@ theme = "moclojer"
 [menu]
   # Main Menu
   [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+  [[menu.main]]
     name = "Documentation"
     url = "https://docs.moclojer.com/"
-    weight = 1
+    weight = 2
   [[menu.main]]
     name = "Features"
     url = "/features/"
-    weight = 2
+    weight = 3
   [[menu.main]]
       name = "Team"
       url = "/team/"
-      weight = 3
+      weight = 4
   [[menu.main]]
       name = "Blog"
       url = "/blog/"
-      weight = 4
+      weight = 5
   [[menu.main]]
       name = "About"
       url = "/about/"
-      weight = 5
+      weight = 6
   [[menu.main]]
     name = "Login"
     url = "https://app.moclojer.com/"
-    weight = 6
+    weight = 7
 
   # Footer Menu
   [[menu.footer]]
@@ -110,18 +114,22 @@ theme = "moclojer"
     url = "/"
     weight = 1
   [[menu.footer]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.footer]]
     name = "Careers"
     url = "/about/careers/"
-    weight = 2
+    weight = 3
   [[menu.footer]]
     name = "Blog"
     url = "/blog/"
-    weight = 3
+    weight = 4
   [[menu.footer]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 5
   [[menu.footer]]
     name = "Terms of Use"
     url = "/about/term-of-use/"
-    weight = 5
+    weight = 6

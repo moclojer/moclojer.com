@@ -1,0 +1,24 @@
+.page-projects-list {
+    .service-summary {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .service-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+
+            .project-links {
+                margin-top: auto;
+                padding-top: 15px;
+            }
+        }
+    }
+}
+
+.page-projects-single {
+    .project-links-header {
+        margin-bottom: 30px;
+    }
+}

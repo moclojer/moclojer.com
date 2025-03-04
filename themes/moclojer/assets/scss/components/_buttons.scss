@@ -15,11 +15,51 @@
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
+
   &:hover {
     color: #ffffff;
     background-color: lighten($primary, 10%);
     transform: translateY(-1px);
     //box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     text-decoration: none;
+  }
+}
+
+.project-link {
+  display: inline-block;
+  font-weight: 600;
+  padding: 6px 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+
+  &.github {
+    background-color: #24292e;
+    color: #ffffff;
+
+    &:hover {
+      background-color: darken(#24292e, 10%);
+    }
+  }
+
+  &.docs {
+    background-color: #0366d6;
+    color: #ffffff;
+
+    &:hover {
+      background-color: darken(#0366d6, 10%);
+    }
+  }
+}
+
+.project-links-header {
+  margin-bottom: 20px;
+
+  .project-link {
+    font-size: 16px;
+    padding: 8px 16px;
   }
 }

@@ -1,16 +1,16 @@
 ---
 title: 'Homepage'
-meta_title: 'no-code api server mock - moclojer'
-description: "Simple and efficient HTTP mock server with specification in yaml, edn or OpenAPI 3"
+meta_title: 'moclojer - Open Source Clojure Projects'
+description: "An open source organization contributing to the Clojure/Script ecosystem"
 intro_image: "images/illustrations/home.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: true
 ---
 
-# no-code api server mock
+# moclojer
 
-**Start by defining what your API contract will look like**
+**We are an open source organization that was born with the goal of contributing to the Clojure/Script ecosystem**
 
-makes it simple and intuitive to create a _fake/mock_ API, speeding up the **API prototyping** process, allowing the **frontend team** _(web, mobile, data, etc)_ to start working without the _"official"_ API being developed
+We create a toolkit to simplify the development of *Terminal User Interface (TUI)* solutions in Clojure and develop products with **clojure by design** 🌈
 
-Simple and efficient HTTP mock server with specification in `yaml`, `edn` and `OpenAPI 3`
+Explore our open source projects below and join our community to contribute to the Clojure ecosystem.
