@@ -1,0 +1,11 @@
+{{ $class := .class | default "" }}
+<div class="project-links {{ $class }}">
+    {{ if .project.Params.github_url }}
+    <a href="{{ .project.Params.github_url }}" target="_blank" class="project-link github">{{ if eq $class
+        "project-links-header" }}View on GitHub{{ else }}GitHub{{ end }}</a>
+    {{ end }}
+    {{ if .project.Params.docs_url }}
+    <a href="{{ .project.Params.docs_url }}" target="_blank" class="project-link docs">{{ if eq $class
+        "project-links-header" }}Documentation{{ else }}Docs{{ end }}</a>
+    {{ end }}
+</div>
