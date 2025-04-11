@@ -8,9 +8,9 @@ description: "Learn how ChronDB, a Git-based database, now supports SQL JOIN ope
 author: "<a href='https://github.com/avelino' alt='Thiago Avelino' target='_blank'>Avelino</a>"
 ---
 
-![SQL JOIN visualization](/blog/implementing-sql-join-in-chrondb.png)
-
 SQL JOIN operations are a fundamental part of any robust database system, allowing developers to combine data from multiple tables based on related columns. In this blog post, we'll explore how we implemented INNER JOIN and LEFT JOIN support in ChronDB, our Git-based chronological database with PostgreSQL protocol compatibility.
+
+![SQL JOIN visualization](/blog/implementing-sql-join-support-in-chrondb-via-postgresql-protocol.png)
 
 ## Background: ChronDB Architecture
 
