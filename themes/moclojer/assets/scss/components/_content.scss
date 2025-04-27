@@ -1,93 +1,178 @@
 .content {
+  width: 100%;
+
   a {
     text-decoration: underline;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: darken($primary, 10%);
+    }
   }
+
   img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
   }
+
   strong {
-    font-width: bold;
+    font-weight: 600;
   }
+
   em {
     font-style: italic;
   }
+
   p {
-    font-family: $font-family-base;
-    line-height: 1.56;
+    font-family: $font-family-paragraph;
+    line-height: 1.7;
+    margin-bottom: 1.8em;
     color: $grey;
+    max-width: 800px;
+    font-weight: 300;
   }
+
   h1 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
     font-size: 34px;
-    line-height: 1.26;
-    font-weight: normal;
-    margin-top: 30px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-top: 40px;
     margin-bottom: 20px;
+    max-width: 800px;
   }
+
   h2 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
     font-size: 26px;
-    font-weight: normal;
+    font-weight: 600;
     line-height: 1.4;
     margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
   }
+
   h3 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
     font-size: 20px;
     line-height: 1.4;
-    font-weight: normal;
-    margin-top: 30px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    max-width: 800px;
   }
+
   ul,
   ol {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding-left: 15px;
+    max-width: 800px;
+
     ul,
     ol {
       margin-bottom: 0;
+      margin-top: 10px;
+      max-width: 100%;
     }
   }
+
   ul {
     list-style: disc;
   }
+
   ol {
     list-style: decimal;
   }
+
   li {
-    margin-bottom: 5px;
-    line-height: 1.56;
+    margin-bottom: 10px;
+    line-height: 1.7;
     margin-left: 20px;
     color: $grey;
+    font-family: $font-family-paragraph;
+    font-weight: 300;
   }
+
   hr {
     border: none;
     border-bottom: 1px solid $white-offset;
+    margin: 40px 0;
   }
+
   table {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-collapse: collapse;
+
     th,
     td {
-      padding: 5px;
+      padding: 12px 15px;
       vertical-align: top;
       border-top: 1px solid $white-offset;
+      text-align: left;
     }
+
     thead th {
       vertical-align: bottom;
-      border-bottom: 1px solid $white-offset;
+      border-bottom: 2px solid $white-offset;
       text-align: left;
-      font-weight: bold;
+      font-weight: 600;
+      background-color: rgba($white-offset, 0.5);
     }
+
     tbody + tbody {
-      border-top: 1px solid $white-offset;
+      border-top: 2px solid $white-offset;
     }
   }
+
   blockquote {
     padding: 0 1em;
     color: $grey;
-    border-left: .25em solid $primary;
+    border-left: 4px solid $primary;
+    margin: 2em 0;
+
+    p {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.1em;
+    }
+
+    cite {
+      display: block;
+      margin-top: 1em;
+      text-align: right;
+      font-size: 0.9em;
+      font-family: $font-family-base;
+      font-style: normal;
+    }
+  }
+
+  code {
+    background-color: rgba($white-offset, 0.8);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.9em;
+  }
+
+  pre {
+    background-color: rgba($black, 0.8);
+    color: $white;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 30px 0;
+
+    code {
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+      color: inherit;
+    }
   }
 }
