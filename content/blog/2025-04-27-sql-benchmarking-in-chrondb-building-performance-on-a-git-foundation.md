@@ -10,7 +10,7 @@ author: "<a href='https://github.com/avelino' alt='Thiago Avelino' target='_blan
 
 ![SQL Benchmarking in ChronDB: Building Performance on a Git Foundation](/blog/sql-benchmarking-in-chrondb-building-performance-on-a-git-foundation.png)
 
-The ChronDB was born from the idea of combining the reliability and native version control of Git with the flexibility and power of a modern database. While our journey began with basic key-value operations, we quickly evolved to support complete SQL queries, including JOINs and Full-Text Search. However, a critical question remained: how to ensure adequate performance when using Git as the underlying storage mechanism?
+The [ChronDB](https://github.com/moclojer/chrondb) was born from the idea of combining the reliability and native version control of Git with the flexibility and power of a modern database. While our journey began with basic key-value operations, we quickly evolved to support complete SQL queries, including JOINs and Full-Text Search. However, a critical question remained: how to ensure adequate performance when using Git as the underlying storage mechanism?
 
 In this post, I will explore our recent benchmarking and optimization efforts for ChronDB's SQL protocol, demonstrating how we are building a robust and performant database on the Git architecture.
 
